@@ -1,8 +1,12 @@
 import type { Metadata } from "next";
 import { League_Spartan } from "next/font/google";
-
+import { headers } from "next/headers";
 import "./globals.css";
+
 import { Navbar } from "@/components/navbar";
+import { VerticalText } from "@/components/pages/vertical-text";
+
+import { Routes } from "@/lib/constants";
 
 const leagueSpartan = League_Spartan({ subsets: ["latin"] });
 
@@ -16,11 +20,19 @@ export default function RootLayout({
 }: {
 	children: React.ReactNode;
 }) {
+	const headersList = headers();
+	const pathname = headersList.get("x-invoke-path");
+
+	const routeName = Object.keys(Routes).find(
+		(key) => pathname === Routes[key as keyof typeof Routes]
+	);
+
 	return (
 		<html lang="en">
 			<body className={leagueSpartan.className}>
 				<Navbar />
-				<div className="relative">{children}</div>
+				<VerticalText>{routeName}</VerticalText>
+				<div className="relative lg:mt-14">{children}</div>
 			</body>
 		</html>
 	);
