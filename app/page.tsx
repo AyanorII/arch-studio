@@ -1,4 +1,4 @@
-import { HeroProjects, Welcome } from "@/pages/home/components";
+import { HeroProjects, SmallTeam, Welcome } from "@/pages/home/components";
 
 export default function Home({
 	searchParams,
@@ -12,6 +12,7 @@ export default function Home({
 			<div className="relative flex min-h-[570px] flex-col">
 				<HeroProjects projectQuery={searchParams.project} />
 				<Welcome />
+				<SmallTeam />
 			</div>
 		</main>
 	);
