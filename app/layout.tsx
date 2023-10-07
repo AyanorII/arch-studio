@@ -32,7 +32,7 @@ export default function RootLayout({
 			<body className={leagueSpartan.className}>
 				<Navbar />
 				<VerticalText>{routeName}</VerticalText>
-				<div className="relative lg:mt-14">{children}</div>
+				<div className="relative">{children}</div>
 			</body>
 		</html>
 	);
