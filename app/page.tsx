@@ -1,4 +1,9 @@
-import { HeroProjects, SmallTeam, Welcome } from "@/pages/home/components";
+import {
+	Featured,
+	HeroProjects,
+	SmallTeam,
+	Welcome,
+} from "@/pages/home/components";
 
 export default function Home({
 	searchParams,
@@ -13,6 +18,7 @@ export default function Home({
 				<HeroProjects projectQuery={searchParams.project} />
 				<Welcome />
 				<SmallTeam />
+				<Featured />
 			</div>
 		</main>
 	);
