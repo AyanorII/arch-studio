@@ -26,16 +26,15 @@ export const HeroProjects = ({ projectQuery }: Props) => {
 					{FEATURED_PROJECTS.map(({ title, description, heroImage }) => (
 						<div
 							key={title}
-							className={twMerge([
-								"w-full shrink-0 py-28 px-8 relative md:px-16 md:py-44 lg:px-32 lg:py-48 transition-transform duration-1000",
-								`-translate-x-[${activeIndex}00%]`,
-							])}
+							className="relative w-full shrink-0 px-8 py-28 transition-transform duration-1000 md:px-16 md:py-44 lg:px-32 lg:py-48"
+							style={{ transform: `translateX(-${activeIndex * 100}%)` }}
 						>
 							<ResponsiveImage
 								image={heroImage}
 								alt={title}
 								fill
 								className="object-cover brightness-[.45]"
+								priority
 							/>
 							<div className="relative text-white">
 								<h2 className="mb-3 whitespace-pre-wrap text-5xl font-bold md:text-8xl">
@@ -74,8 +73,9 @@ export const HeroProjects = ({ projectQuery }: Props) => {
 								buttonVariants({
 									variant: "default",
 								}),
-								"h-20 w-20 text-lg transition-all hover:bg-[#EEEFF4]",
-								activeIndex !== index && "text-[#7D828F] bg-white",
+								"h-20 w-20 text-lg transition-all hover:bg-slate-800",
+								activeIndex !== index &&
+									"text-[#7D828F] bg-white  hover:bg-[#EEEFF4]",
 							])}
 						>
 							{String(index + 1).padStart(2, "0")}
