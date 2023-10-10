@@ -11,7 +11,7 @@ export const Navbar = () => {
 		<Container className="relative z-[100] border-b bg-white py-8">
 			<div className="flex items-center justify-between lg:gap-24">
 				<Image
-					src="/logo.svg"
+					src="/images/logo.svg"
 					alt="Arch"
 					width={77}
 					height={32}
