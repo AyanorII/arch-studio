@@ -1,10 +1,11 @@
-import { AboutHero, Heritage } from "@/components/pages/about";
+import { AboutHero, Heritage, Leaders } from "@/views/about";
 
 const AboutPage = () => {
 	return (
 		<div>
 			<AboutHero />
 			<Heritage />
+			<Leaders />
 		</div>
 	);
 };
