@@ -3,7 +3,7 @@ import {
 	HeroProjects,
 	SmallTeam,
 	Welcome,
-} from "@/pages/home/components";
+} from "@/views/home/components";
 
 export default function Home({
 	searchParams,
