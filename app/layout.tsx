@@ -4,6 +4,7 @@ import { headers } from "next/headers";
 import "./globals.css";
 
 import { Navbar } from "@/components/navbar";
+import { Footer } from "@/components/pages/footer";
 import { VerticalText } from "@/components/pages/vertical-text";
 
 import { Routes } from "@/lib/constants";
@@ -33,6 +34,7 @@ export default function RootLayout({
 				<Navbar />
 				<VerticalText>{routeName}</VerticalText>
 				<div className="relative">{children}</div>
+				<Footer />
 			</body>
 		</html>
 	);
