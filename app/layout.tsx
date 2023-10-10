@@ -7,6 +7,7 @@ import "./globals.css";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/pages/footer";
 import { VerticalText } from "@/components/pages/vertical-text";
+import { Analytics } from "@vercel/analytics/react";
 import { twMerge } from "tailwind-merge";
 
 const leagueSpartan = League_Spartan({ subsets: ["latin"] });
@@ -33,6 +34,7 @@ export default function RootLayout({
 				<VerticalText />
 				<div className="relative grow">{children}</div>
 				<Footer />
+				<Analytics />
 				<ToastContainer
 					position="bottom-right"
 					autoClose={2500}
