@@ -26,13 +26,28 @@ export const Footer = () => {
 				</Link>
 				<ul className="flex flex-col gap-8 text-center text-lg font-bold text-[#7D828F] md:flex-row md:gap-16">
 					<li>
-						<Link href={Routes.Portfolio}>Portfolio</Link>
+						<Link
+							href={Routes.Portfolio}
+							className="transition-colors hover:text-black"
+						>
+							Portfolio
+						</Link>
 					</li>
 					<li>
-						<Link href={Routes.About}>About Us</Link>
+						<Link
+							href={Routes.About}
+							className="transition-colors hover:text-black"
+						>
+							About Us
+						</Link>
 					</li>
 					<li>
-						<Link href={Routes.Contact}>Contact</Link>
+						<Link
+							href={Routes.Contact}
+							className="transition-colors hover:text-black"
+						>
+							Contact
+						</Link>
 					</li>
 				</ul>
 				<Link
