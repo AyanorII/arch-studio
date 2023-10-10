@@ -11,7 +11,7 @@ export const AboutHero = () => {
 
 	return (
 		<section>
-			<Container className="p-0">
+			<Container className="p-0 md:px-8">
 				<div className="relative pb-16 lg:grid lg:grid-cols-2 xl:grid-cols-[1.5fr,_1fr]">
 					<ResponsiveImage
 						image={heroImage}

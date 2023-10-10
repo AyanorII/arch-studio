@@ -1,7 +1,12 @@
-import { AboutHero } from "@/components/pages/about/Hero";
+import { AboutHero, Heritage } from "@/components/pages/about";
 
 const AboutPage = () => {
-	return <AboutHero />;
+	return (
+		<div>
+			<AboutHero />
+			<Heritage />
+		</div>
+	);
 };
 
 export default AboutPage;
