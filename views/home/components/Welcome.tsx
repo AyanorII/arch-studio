@@ -1,5 +1,6 @@
 import Image from "next/image";
 
+import { SectionHeading } from "@/components/pages/SectionHeading";
 import { Container } from "@/components/ui";
 import WelcomeImage from "@/public/images/home/desktop/image-welcome.jpg";
 
@@ -14,9 +15,9 @@ export const Welcome = () => {
 					</span>
 					<div className="flex gap-28 lg:justify-end">
 						<div className="max-w-[60ch] lg:mt-24">
-							<h1 className="mb-5 whitespace-pre-wrap text-5xl font-bold leading-[52px] md:text-7xl">
+							<SectionHeading className="mb-5 leading-[52px]">
 								{"Welcome to\nArch Studio"}
-							</h1>
+							</SectionHeading>
 							<div className="text-lg text-[#60636D]">
 								<p>
 									We have a unique network and skillset to help bring your

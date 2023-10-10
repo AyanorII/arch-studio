@@ -1,3 +1,4 @@
+import { SectionHeading } from "@/components/pages/SectionHeading";
 import { Container } from "@/components/ui";
 import { ResponsiveImage } from "@/components/ui/ResponsiveImage";
 import { ResponsiveImage as IResponsiveImage } from "@/lib/types";
@@ -15,9 +16,9 @@ export const Heritage = () => {
 				<div className="mt-5 grid md:mt-28 lg:grid-cols-2 lg:gap-16 xl:gap-32">
 					<div className="relative">
 						<div className="mb-10 hidden w-16 border md:block" />
-						<h2 className="mb-6 whitespace-pre-wrap text-5xl font-bold md:mb-16 md:text-7xl lg:mb-12">
+						<SectionHeading className="mb-6  md:mb-16 lg:mb-12">
 							{"Our\nHeritage"}
-						</h2>
+						</SectionHeading>
 						<div className="text-lg text-[#60636D]">
 							<p>
 								Founded in 2007, we started as a trio of architects. Our

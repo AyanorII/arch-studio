@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+import { SectionHeading } from "@/components/pages/SectionHeading";
 import { Container, buttonVariants } from "@/components/ui";
 import { ResponsiveImage } from "@/components/ui/ResponsiveImage";
 import { MoveRightIcon } from "lucide-react";
@@ -14,7 +15,7 @@ export const Featured = () => {
 			<Container className="">
 				<div className="relative pb-24">
 					<div className="mb-11 flex items-center justify-between">
-						<h3 className="text-5xl font-bold">Featured</h3>
+						<SectionHeading>Featured</SectionHeading>
 						<Link
 							href={Routes.Portfolio}
 							className={twMerge([

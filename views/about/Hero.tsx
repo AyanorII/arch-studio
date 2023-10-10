@@ -1,3 +1,4 @@
+import { SectionHeading } from "@/components/pages/SectionHeading";
 import { Container } from "@/components/ui";
 import { ResponsiveImage } from "@/components/ui/ResponsiveImage";
 import { ResponsiveImage as IResponsiveImage } from "@/lib/types";
@@ -25,9 +26,7 @@ export const AboutHero = () => {
 							About
 						</span>
 						<div className="absolute bottom-0 left-8 w-16 border md:bottom-[unset] md:left-16 md:top-20 md:pb-0 lg:top-40 xl:left-40" />
-						<h1 className="mb-5 text-5xl font-bold md:mb-10 md:text-7xl">
-							Your team of professionals
-						</h1>
+						<SectionHeading as="h1">Your team of professionals</SectionHeading>
 						<p className="text-lg text-[#60636D]">
 							Our small team of world-class professionals will work with you
 							every step of the way. Strong relationships are at the core of
