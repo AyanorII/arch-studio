@@ -21,7 +21,7 @@ export const Footer = () => {
 						width={58}
 						height={24}
 						alt="Arch"
-						className="h-[40px] w-[96px] invert"
+						className="invert lg:h-[40px] lg:w-[96px]"
 					/>
 				</Link>
 				<ul className="flex flex-col gap-8 text-center text-lg font-bold text-[#7D828F] md:flex-row md:gap-16">

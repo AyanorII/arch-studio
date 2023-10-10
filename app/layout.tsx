@@ -6,6 +6,7 @@ import "./globals.css";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/pages/footer";
 import { VerticalText } from "@/components/pages/vertical-text";
+import { twMerge } from "tailwind-merge";
 
 import { Routes } from "@/lib/constants";
 
@@ -30,10 +31,15 @@ export default function RootLayout({
 
 	return (
 		<html lang="en">
-			<body className={leagueSpartan.className}>
+			<body
+				className={twMerge([
+					leagueSpartan.className,
+					"flex flex-col min-h-[100dvh]",
+				])}
+			>
 				<Navbar />
 				<VerticalText>{routeName}</VerticalText>
-				<div className="relative">{children}</div>
+				<div className="relative grow">{children}</div>
 				<Footer />
 			</body>
 		</html>
