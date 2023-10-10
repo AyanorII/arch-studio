@@ -1,4 +1,4 @@
-import { AboutHero, Heritage, Leaders } from "@/views/about";
+import { AboutHero, Heritage, Leaders } from "@/views/about/components";
 
 const AboutPage = () => {
 	return (
