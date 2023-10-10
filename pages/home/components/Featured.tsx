@@ -32,7 +32,7 @@ export const Featured = () => {
 						{FEATURED_PROJECTS.slice(0, 3).map(({ title, image }, index) => (
 							<div
 								key={title}
-								className="relative flex aspect-video h-[240px] w-full items-end lg:h-[560px]"
+								className="relative flex h-[240px] w-full items-end lg:h-[560px]"
 							>
 								<span className="md hidden text-[250px] font-bold leading-none text-white opacity-50 md:absolute md:right-4 md:top-4 md:z-10 md:block lg:right-0">
 									{index + 1}
