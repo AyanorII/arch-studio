@@ -5,6 +5,7 @@ import { Container } from "@/components/ui";
 import { MoveRightIcon } from "lucide-react";
 
 import { CONTACT_INFO } from "../contants";
+import { Map } from "./Map";
 
 export const ContactDetails = () => {
 	return (
@@ -46,6 +47,9 @@ export const ContactDetails = () => {
 							</div>
 						))}
 					</div>
+				</div>
+				<div className="relative mt-16 aspect-video w-full md:mt-56 lg:mt-40">
+					<Map />
 				</div>
 			</Container>
 		</section>
