@@ -12,8 +12,6 @@ import { Dialog, DialogContent, DialogTrigger } from "../ui/dialog";
 export const MobileNav = () => {
 	const [isDialogOpen, setIsDialogOpen] = useState(false);
 
-	if (typeof window !== "undefined" && window.screen.width >= 768) return <></>;
-
 	return (
 		<Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
 			<DialogTrigger>
