@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { League_Spartan } from "next/font/google";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import "./globals.css";
 
 import { Navbar } from "@/components/navbar";
@@ -31,6 +33,18 @@ export default function RootLayout({
 				<VerticalText />
 				<div className="relative grow">{children}</div>
 				<Footer />
+				<ToastContainer
+					position="bottom-right"
+					autoClose={2500}
+					hideProgressBar={false}
+					newestOnTop={false}
+					closeOnClick
+					rtl={false}
+					pauseOnFocusLoss
+					draggable
+					pauseOnHover
+					theme="colored"
+				/>
 			</body>
 		</html>
 	);
