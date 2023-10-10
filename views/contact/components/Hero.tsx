@@ -13,7 +13,7 @@ export const ContactHero = () => {
 	return (
 		<section>
 			<Container className="p-0 md:px-8">
-				<div className="relative pb-16 lg:grid lg:grid-cols-2 xl:grid-cols-[1.5fr,_1fr]">
+				<div className="relative lg:grid lg:grid-cols-2 xl:grid-cols-[1.5fr,_1fr]">
 					<ResponsiveImage
 						image={heroImage}
 						alt="Contact"
@@ -21,11 +21,11 @@ export const ContactHero = () => {
 						height={240}
 						className="relative h-[240px] w-full brightness-50 md:h-[720px]"
 					/>
-					<div className="relative -top-12 w-[90%] bg-white pb-16 pl-8 pt-20 md:absolute md:bottom-0 md:right-0 md:top-[unset] md:px-16 md:pt-40 lg:max-w-[60%] lg:pt-52 xl:pl-40">
+					<div className="relative -top-12 w-[90%] bg-white pl-8 pt-20 md:absolute md:bottom-0 md:right-0 md:top-[unset] md:px-16 md:pt-40 lg:max-w-[60%] lg:pt-52 xl:pl-40">
 						<span className="absolute -top-14 right-0 hidden text-9xl font-bold text-[#EEEFF4] md:block lg:-top-24 lg:text-[250px]">
 							Contact
 						</span>
-						<div className="absolute bottom-0 left-8 w-16 border md:bottom-[unset] md:left-16 md:top-20 md:pb-0 lg:top-40 xl:left-40" />
+						<div className="absolute left-8 hidden w-16 border md:bottom-[unset] md:left-16 md:top-20 md:block md:pb-0 lg:top-40 xl:left-40" />
 						<SectionHeading as="h1" className="mb-5 md:mb-9">
 							Tell us about your project
 						</SectionHeading>
