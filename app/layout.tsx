@@ -1,14 +1,11 @@
 import type { Metadata } from "next";
 import { League_Spartan } from "next/font/google";
-import { headers } from "next/headers";
 import "./globals.css";
 
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/pages/footer";
 import { VerticalText } from "@/components/pages/vertical-text";
 import { twMerge } from "tailwind-merge";
-
-import { Routes } from "@/lib/constants";
 
 const leagueSpartan = League_Spartan({ subsets: ["latin"] });
 
@@ -22,13 +19,6 @@ export default function RootLayout({
 }: {
 	children: React.ReactNode;
 }) {
-	const headersList = headers();
-	const pathname = headersList.get("x-invoke-path");
-
-	const routeName = Object.keys(Routes).find(
-		(key) => pathname === Routes[key as keyof typeof Routes]
-	);
-
 	return (
 		<html lang="en">
 			<body
@@ -38,7 +28,7 @@ export default function RootLayout({
 				])}
 			>
 				<Navbar />
-				<VerticalText>{routeName}</VerticalText>
+				<VerticalText />
 				<div className="relative grow">{children}</div>
 				<Footer />
 			</body>
